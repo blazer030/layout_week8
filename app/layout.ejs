@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./components/header.ejs')  %>
+
+  <main>
+    <%- contents %>
+  </main>
+  
+  <%- include('./components/footer.ejs')  %>
+  <nav class="position-fixed top-50 end-0 translate-middle-y me-1 d-none d-xl-block">
+    <ul class="list-unstyled mb-0">
+      <li class="mb-1"><a href="javascript:void(0);"><i class="fab fa-facebook text-primary-dark fs-lg"></i></a></li>
+      <li class="mb-1"><a href="javascript:void(0);"><i class="fab fa-instagram text-primary-dark fs-lg"></i></li>
+      <li><a href="javascript:void(0);"><i class="fab fa-line text-primary-dark fs-lg"></i></a></li>
+    </ul>
+  </nav>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
